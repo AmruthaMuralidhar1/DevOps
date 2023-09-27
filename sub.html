@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscription Plans</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neuton&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body {
+    background-image: url('bluebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 470px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card h2 {
+    margin-top: 0;
+    color: #000000;
+    font-family: 'Neuton', serif;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .card p {
+    color: #000000;
+  }
+
+  .basic {
+    background-color: white;
+    color: #000000;
+  }
+
+  .premium {
+    background-color: white;
+    color: white;
+  }
+
+  .pro {
+    background-color: white;
+    color: white;
+  }
+
+  button {
+    background-color: #0000FF;
+    font-family: 'Neuton', serif;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    width: 70%;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #FF70A6;
+  }
+  .navbar {
+            background-color: #000;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #fff;
+        }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="home.html">Alture</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                 <li class="nav-item active">
+                    <a class="nav-link" href="#">Subscription Plans<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="card basic">
+      <h2>Basic Plan</h2>
+      <p>Access to essential features</p>
+      <p>24/7 Support</p>
+      <p>Limited Content</p>
+      <p>Limited Content Access</p>
+      <p>Limited Chat</p>
+      <p>$0.00/month</p>
+      <button id="1">Subscribe</button>
+    </div>
+    
+    <div class="card premium">
+      <h2>Premium Plan</h2>
+      <p>Access to premium features</p>
+      <p>Full Content Access</p>
+      <p>Priority Support</p>
+      <p>Exclusive Content Access</p>
+      <p>Limited Chat</p>
+      <p>$19.99/month</p>
+      <button id="2">Subscribe</button>
+    </div>
+    
+    <div class="card pro">
+      <h2>Pro Plan</h2>
+      <p>Access to all features</p>
+      <p>Full Content Access</p>
+      <p>Priority Support</p>
+      <p>Exclusive Content Access</p>
+      <p>Ad-Free Experience</p>
+      <p>Unlimtted Chat</p>
+      <p>$29.99/month</p>
+      <button id="3">Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript and jQuery libraries -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Your custom JavaScript -->
+  <script>
+    document.getElementById("1").addEventListener("click", function() 
+    {
+      alert("You must be logged in!");
+    });
+    document.getElementById("2").addEventListener("click", function() 
+    {
+      alert("You must be logged in!");
+    });
+    document.getElementById("3").addEventListener("click", function() 
+    {
+      alert("You must be logged in!");
+    });
+  </script>
+</body>
+</html>
