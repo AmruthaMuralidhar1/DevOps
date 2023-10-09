@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
     $count = mysqli_num_rows($result);  
 
     if ($count == 1) {  
-        header("Location: editing.html");
+        header("Location: home1.html");
     } else {  
         echo '<script>
                 window.location.href = "login.php";
