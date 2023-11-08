@@ -27,11 +27,14 @@
                 $hash = password_hash($password, PASSWORD_DEFAULT);
                     
                 // Password Hashing is used here. 
-                $sql = "INSERT INTO alture(id, username, ph, email, password) VALUES('$next_id','$username', '$ph', '$email','$hash')";
+                $sql = "INSERT INTO alture(id, username, ph, email, password) VALUES('$next_id','$username', '$ph', '$email','$password')";
         
                 $result = mysqli_query($conn, $sql);        
                 if ($result) {
-                    header("Location: editing.html");
+                    echo  '<script>
+                        alert("Account created please login!")
+                        window.location.href = "login.php";
+                    </script>';
                 }
             } 
             else { 

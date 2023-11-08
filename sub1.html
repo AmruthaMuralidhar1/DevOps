@@ -106,10 +106,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
+                    <a class="nav-link" href="home1.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="events.html">Events</a>
+                    <a class="nav-link" href="events1.html">Events</a>
                 </li>
                  <li class="nav-item active">
                     <a class="nav-link" href="#">Subscription Plans<span class="sr-only">(current)</span></a>
@@ -165,18 +165,30 @@
 
   <!-- Your custom JavaScript -->
   <script>
-    document.getElementById("1").addEventListener("click", function() 
-    {
-      alert("You must be logged in!");
-    });
-    document.getElementById("2").addEventListener("click", function() 
-    {
-      alert("You must be logged in!");
-    });
-    document.getElementById("3").addEventListener("click", function() 
-    {
-      alert("You must be logged in!");
-    });
-  </script>
+  document.getElementById("1").addEventListener("click", function() {
+    if (confirm("Confirm Payment")) {
+      alert("You are subscribed!");
+    } else {
+      alert("Payment canceled.");
+    }
+  });
+
+  document.getElementById("2").addEventListener("click", function() {
+    if (confirm("Confirm Payment")) {
+      alert("You are subscribed!");
+    } else {
+      alert("Payment canceled.");
+    }
+  });
+
+  document.getElementById("3").addEventListener("click", function() {
+    if (confirm("Confirm Payment")) {
+      alert("You are subscribed!");
+    } else {
+      alert("Payment canceled.");
+    }
+  });
+</script>
+
 </body>
 </html>
